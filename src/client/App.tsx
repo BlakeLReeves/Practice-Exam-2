@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './public/Home';
 import Navbar from './shared/Navbar';
+import RequestBooks from './public/RequestBooks';
 
 export default class IApp extends React.Component<IAppProps, IAppState> {
     render () {
@@ -13,6 +14,7 @@ export default class IApp extends React.Component<IAppProps, IAppState> {
                     <div className="container">
                         <Switch>
                             <Route exact path='/' component={Home} />
+                            <Route exact path='/books' component={RequestBooks} />
                         </Switch>
                     </div>
                 </>
