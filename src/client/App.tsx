@@ -5,6 +5,7 @@ import Home from './public/Home';
 import Navbar from './shared/Navbar';
 import RequestBooks from './public/RequestBooks';
 import ViewBook from './public/ViewBook';
+import UpdateBook from './admin/UpdateBook';
 
 export default class IApp extends React.Component<IAppProps, IAppState> {
     render () {
@@ -17,6 +18,7 @@ export default class IApp extends React.Component<IAppProps, IAppState> {
                             <Route exact path='/' component={Home} />
                             <Route exact path='/books' component={RequestBooks} />
                             <Route exact path='/books/:id' component={ViewBook} />
+                            <Route exact path='/books/:id/update' component={UpdateBook} />
                         </Switch>
                     </div>
                 </>
