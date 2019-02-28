@@ -8,6 +8,7 @@ const Navbar: React.SFC<NavbarProps> = () => {
         <nav className="nav bg-dark">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/books" className="nav-link">Books</Link>
+            <Link to="/books/new" className="nav-link">Post Book</Link>
         </nav>
     );
 }
