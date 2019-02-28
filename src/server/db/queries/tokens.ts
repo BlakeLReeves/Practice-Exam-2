@@ -3,7 +3,7 @@ import { accessSync } from 'fs';
 
 const findOne = async (id: number, token: string) => Query(`SELECT * FROM Tokens WHERE id = ${id} AND token = ?`, [token]);
 
-const insert = async (userid: number) => Query(`INSTERT INTO Tokens (userid) VALUES (${userid})`);
+const insert = async (userid: number) => Query(`INSERT INTO Tokens (userid) VALUES (${userid})`);
 
 const update = async (id: number, token: string) => Query(`UPDATE Tokens SET token = "${token}" WHERE id = ?`, [id]);
 
